@@ -1,4 +1,11 @@
-module.exports = ({ phrase }) => {
+const config = require("./config.json");
+
+module.exports = ({ phrase, locale = "ES" }) => {
   if (phrase == "") return [];
-  return phrase.toUpperCase().split(" ");
+
+  const localePrepositions = config[locale] && config[locale].prepositions;
+
+  const removePrepositions = (word) => !localePrepositions.includes(word);
+
+  return phrase.toUpperCase().split(" ").filter(removePrepositions);
 };

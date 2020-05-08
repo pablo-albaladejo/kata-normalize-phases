@@ -10,6 +10,18 @@ describe("is valid output", () => {
     const phrase = "hi";
     expect(parser({ phrase })).toEqual(["HI"]);
   });
+  it("it removes prepositions of a given phrase in spanish", () => {
+    const phrase = "De la casa de Juan a la casa de Pedro";
+    const locale = "ES";
+    expect(parser({ phrase, locale })).toEqual([
+      "LA",
+      "CASA",
+      "JUAN",
+      "LA",
+      "CASA",
+      "PEDRO",
+    ]);
+  });
   xit("it parses a phrase string", () => {
     const phrase = "Muchachos no ` me gusta el fondo el blanco.$";
     expect(parser({ phrase })).toEqual([
