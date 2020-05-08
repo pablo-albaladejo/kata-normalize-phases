@@ -1,14 +1,15 @@
 {
-	"name": "tdd-kata",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "jest"
-	},
-	"author": "Pablo Albaladejo Mestre <pablo.albaladejo.mestre@gmail.com> (https://github.com/pablo-albaladejo)",
-	"license": "ISC",
-	"devDependencies": {
-		"jest": "^26.0.1"
-	}
+  "name": "tdd-kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Pablo Albaladejo Mestre <pablo.albaladejo.mestre@gmail.com> (https://github.com/pablo-albaladejo)",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
 }
