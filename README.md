@@ -1,6 +1,27 @@
-# String parser
+# kata-normalicer
 
-TDD Kata
+sentence normalicer module.
+
+## Usage
+
+```js
+const normalicer = require('kata-normalicer');
+
+const locale = 'ES';
+const sentence = 'De la casa de Juan a la casa de Pedro';
+
+const characters = normalicer({
+  sentence,
+  locale,
+});
+
+console.log(characters) // ["LA", "CASA", "JUAN", "LA", "CASA", "PEDRO",]
+
+```
+
+---
+
+# How to contribute
 
 ## Run test
 
