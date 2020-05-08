@@ -38,8 +38,14 @@ describe("is valid output", () => {
     expect(parser({ phrase, locale })).toEqual(["ESTA", "AGUILA"]);
   });
 
+  xit("it transform plural to singular word", () => {
+    const phrase = "está águila";
+    const locale = "ARG";
+    expect(parser({ phrase, locale })).toEqual(["ESTA", "AGUILA"]);
+  });
+
   xit("it parses a phrase string", () => {
-    const phrase = "Muchachos no ` me gusta el fondo el blanco.$";
+    const phrase = "Muchachos no ` me gusta el fondo el blancos.$";
     expect(parser({ phrase })).toEqual([
       "MUCHACHO",
       "NO",

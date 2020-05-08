@@ -20,7 +20,7 @@ module.exports = ({ phrase, locale = "ES" }) => {
 
   return removeSpecialChars(removeAccents(phrase))
     .toUpperCase()
-    .split(" ")
+    .split(/\s+/g)
     .filter(removePrepositions)
     .map(fromPluralToSingular);
 };
