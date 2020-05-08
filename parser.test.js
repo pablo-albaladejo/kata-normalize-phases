@@ -32,6 +32,12 @@ describe("is valid output", () => {
     expect(parser({ phrase })).toEqual(["ESTA", "AGUILA"]);
   });
 
+  it("it uses default spanish locale ", () => {
+    const phrase = "está águila";
+    const locale = "ARG";
+    expect(parser({ phrase, locale })).toEqual(["ESTA", "AGUILA"]);
+  });
+
   xit("it parses a phrase string", () => {
     const phrase = "Muchachos no ` me gusta el fondo el blanco.$";
     expect(parser({ phrase })).toEqual([

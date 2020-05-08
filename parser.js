@@ -3,7 +3,7 @@ const config = require("./config.json");
 module.exports = ({ phrase, locale = "ES" }) => {
   if (phrase == "") return [];
 
-  const { prepositions, pluralsRegx } = config[locale];
+  const { prepositions, pluralsRegx } = config[locale] || config["ES"];
 
   const localePrepositions = prepositions;
 
