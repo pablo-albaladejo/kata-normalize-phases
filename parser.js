@@ -1,4 +1,4 @@
 module.exports = ({ phrase }) => {
   if (phrase == "") return [];
-  return phrase.toUpperCase().split(" ");
+  return phrase.replace(/[^a-zA-Z ]/g, '').toUpperCase().split(" ");
 };

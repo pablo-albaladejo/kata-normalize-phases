@@ -10,6 +10,13 @@ describe("is valid output", () => {
     const phrase = "hi";
     expect(parser({ phrase })).toEqual(["HI"]);
   });
+  it("it removes special characters from string", () => {
+    const phrase = "abc's test#s";
+    expect(parser({ phrase })).toEqual([
+      "ABCS",
+      "TESTS",
+    ]);
+  });
   xit("it parses a phrase string", () => {
     const phrase = "Muchachos no ` me gusta el fondo el blanco.$";
     expect(parser({ phrase })).toEqual([
