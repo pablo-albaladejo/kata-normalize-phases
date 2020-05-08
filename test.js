@@ -22,6 +22,10 @@ describe("is valid output", () => {
       "PEDRO",
     ]);
   });
+  it("it removes special characters from string", () => {
+    const phrase = "abc's test#s";
+    expect(parser({ phrase })).toEqual(["ABCS", "TESTS"]);
+  });
   xit("it parses a phrase string", () => {
     const phrase = "Muchachos no ` me gusta el fondo el blanco.$";
     expect(parser({ phrase })).toEqual([

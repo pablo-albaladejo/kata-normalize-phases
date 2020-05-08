@@ -7,5 +7,9 @@ module.exports = ({ phrase, locale = "ES" }) => {
 
   const removePrepositions = (word) => !localePrepositions.includes(word);
 
-  return phrase.toUpperCase().split(" ").filter(removePrepositions);
+  return phrase
+    .replace(/[^a-zA-Z ]/g, "")
+    .toUpperCase()
+    .split(" ")
+    .filter(removePrepositions);
 };
