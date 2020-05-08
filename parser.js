@@ -14,11 +14,13 @@ module.exports = ({ phrase, locale = "ES" }) => {
     return word.replace(removeS, "");
   };
 
-  return phrase
-    .normalize("NFD")
-    .replace(/[^a-zA-Z ]/g, "")
+  const removeAccents = (word) => word.normalize("NFD");
+
+  const removeSpecialChars = (word) => word.replace(/[^a-zA-Z ]/g, "");
+
+  return removeSpecialChars(removeAccents(phrase))
     .toUpperCase()
-    .split(" ")
+    .split(/\s+/g)
     .filter(removePrepositions)
     .map(fromPluralToSingular);
 };
