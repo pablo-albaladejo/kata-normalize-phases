@@ -25,5 +25,84 @@
       "VERSUS",
       "VIA"
     ]
+  },
+  "EN": {
+    "prepositions": [
+      "ABOARD",
+      "ABOUT",
+      "ABOVE",
+      "ACCORDING  TO",
+      "ACROSS",
+      "AFTER",
+      "AGAINST",
+      "ALONG",
+      "ALONG WITH",
+      "AMONG",
+      "APART FROM",
+      "AROUND",
+      "AS",
+      "AS FOR",
+      "AT",
+      "BECAUSE  OF",
+      "BEFORE",
+      "BEHIND",
+      "BELOW",
+      "BENEATH",
+      "BESIDE",
+      "BETWEEN",
+      "BEYOND",
+      "BY",
+      "BY MEANS  OF",
+      "CONCERNING",
+      "DESPITE",
+      "DOWN",
+      "DURING",
+      "EXCEPT",
+      "EXCEPT  FOR",
+      "EXCEPTING",
+      "FOR",
+      "FROM",
+      "IN",
+      "IN ADDITION  TO",
+      "IN BACK  OF",
+      "IN CASE  OF",
+      "IN FRONT  OF",
+      "IN PLACE  OF",
+      "INSIDE",
+      "IN SPITE  OF",
+      "INSTEAD  OF",
+      "INTO",
+      "LIKE",
+      "NEAR",
+      "NEXT",
+      "OF",
+      "OFF",
+      "ON",
+      "ON TO",
+      "ON  TOP  OF",
+      "OUT",
+      "OUT  OF",
+      "OUTSIDE",
+      "OVER",
+      "PAST",
+      "REGARDING",
+      "ROUND",
+      "SINCE",
+      "THROUGH",
+      "THROUGH OUT",
+      "TILL",
+      "TO",
+      "TOWARD",
+      "UNDER",
+      "UNDERNEATH",
+      "UNLIKE",
+      "UNTIL",
+      "UP",
+      "UPON",
+      "UP  TO",
+      "WITH",
+      "WITHIN",
+      "WITHOUT"
+    ]
   }
 }
