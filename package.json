@@ -4,13 +4,11 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha --reporter spec './test.js' -w"
+		"test": "jest"
 	},
 	"author": "Pablo Albaladejo Mestre <pablo.albaladejo.mestre@gmail.com> (https://github.com/pablo-albaladejo)",
 	"license": "ISC",
 	"devDependencies": {
-		"debug": "^4.1.0",
-		"expect.js": "^0.3.1",
-		"mocha": "^5.2.0"
+		"jest": "^26.0.1"
 	}
 }
