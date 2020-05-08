@@ -14,8 +14,9 @@ module.exports = ({ phrase, locale = "ES" }) => {
     return word.replace(removeS, "");
   };
 
-  return phrase
-    .normalize("NFD")
+  const removeAccents = (word) => word.normalize("NFD");
+
+  return removeAccents(phrase)
     .replace(/[^a-zA-Z ]/g, "")
     .toUpperCase()
     .split(" ")
