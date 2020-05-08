@@ -24,7 +24,8 @@
       "TRAS",
       "VERSUS",
       "VIA"
-    ]
+    ],
+    "plurals": "([a-zA-Z]+?)(s\b)"
   },
   "EN": {
     "prepositions": [
@@ -103,6 +104,7 @@
       "WITH",
       "WITHIN",
       "WITHOUT"
-    ]
+    ],
+    "plurals": ""
   }
 }
