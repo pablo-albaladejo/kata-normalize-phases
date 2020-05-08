@@ -1,3 +1,4 @@
+const config = require('./config.json');
 const kata = require('./kata.js');
 
 describe('is valid output', () => {
