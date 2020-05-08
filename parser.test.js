@@ -38,6 +38,12 @@ describe("is valid output", () => {
     expect(parser({ phrase, locale })).toEqual(["ESTA", "AGUILA"]);
   });
 
+  it("it works with english words", () => {
+    const phrase = "please hurry up";
+    const locale = "EN";
+    expect(parser({ phrase, locale })).toEqual(["PLEASE", "HURRY"]);
+  });
+
   xit("it transform plural to singular word", () => {
     const phrase = "está águila";
     const locale = "ARG";
