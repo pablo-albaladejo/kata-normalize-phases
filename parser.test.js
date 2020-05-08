@@ -26,6 +26,12 @@ describe("is valid output", () => {
     const phrase = "abc's test#s";
     expect(parser({ phrase })).toEqual(["ABCS", "TESTS"]);
   });
+
+  it("it removes special accents from string", () => {
+    const phrase = "está águila";
+    expect(parser({ phrase })).toEqual(["ESTA", "AGUILA"]);
+  });
+
   xit("it parses a phrase string", () => {
     const phrase = "Muchachos no ` me gusta el fondo el blanco.$";
     expect(parser({ phrase })).toEqual([

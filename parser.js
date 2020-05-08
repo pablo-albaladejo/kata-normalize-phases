@@ -8,6 +8,7 @@ module.exports = ({ phrase, locale = "ES" }) => {
   const removePrepositions = (word) => !localePrepositions.includes(word);
 
   return phrase
+    .normalize("NFD")
     .replace(/[^a-zA-Z ]/g, "")
     .toUpperCase()
     .split(" ")
