@@ -1,4 +1,5 @@
 const parser = require("./parser.js");
+const config = require("./config.json");
 
 describe("is valid output", () => {
   it("it returns an empty an array if phrase is empty", () => {
